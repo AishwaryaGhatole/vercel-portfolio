@@ -26,8 +26,6 @@ const GoToTop = () => {
       top: 0,
       behavior: "smooth",
     });
-    const audio = new Audio("/aishwarya-portfolio/public/up-button.mp3")
-    audio.play()
   };
 
   return isVisible ? (

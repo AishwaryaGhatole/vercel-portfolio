@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link
-            to="/"
+            to="#hero"
             className="flex items-center gap-2"
             onClick={() => {
               setActive("");
@@ -35,11 +35,9 @@ const Navbar = () => {
               style={{ backgroundImage: `url(${logo})` }}
               ></div>
 
-            <a href="#hero">
               <span className="font-bold text-xl">
                 AISHWARYA <span className="hidden sm:inline">GHATOLE</span>
               </span>
-            </a>
           </Link>
 
           {/* Desktop Menu */}
