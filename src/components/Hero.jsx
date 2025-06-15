@@ -2,6 +2,19 @@ import React from "react";
 import { styles } from "../styles";
 import Typewriter from "typewriter-effect";
 import { BallBg } from "./canvas";
+import { myLinks } from "../constants";
+
+const MediaLinks = () =>{
+  return (
+    <ul className="flex mt-6 sm:mt-4 lg:mt-10 md:mt-10">
+      {myLinks.map((myLink)=>(
+        <li key={myLink.name} className="bg-gradient-to-b from-violet-950 to-violet-900 hover:bg-gradient-to-b hover:from-violet-900 hover:to-violet-950 hover:transition-shadow shadow-transparent text-white mr-6 p-4 rounded-xl">
+          <a href={myLink.link}><img src={myLink.logo} alt={myLink.name} className="w-4xl" /></a> 
+        </li>
+      ))}
+    </ul>
+  )
+}
 
 const Hero = () => {
   return (
@@ -32,6 +45,7 @@ const Hero = () => {
               }}
             />
           </h6>
+          <MediaLinks />
         </div>
       </div>
     </section>

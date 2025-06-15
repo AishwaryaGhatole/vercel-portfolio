@@ -38,6 +38,11 @@ import sound3 from "./sounds/sound-3.mp3"
 import sound4 from "./sounds/sound-4.mp3"
 import sound5 from "./sounds/sound-5.mp3"
 
+// my links svgs
+import Github from "./mylinks/github.svg"
+import linkedIn from "./mylinks/linkedin.svg"
+import twitter from "./mylinks/twitter.svg"
+
 export {
   sound1,
   sound2,
@@ -67,4 +72,7 @@ export {
   amazonBestSeller, 
   keepNote, 
   passwordGenerator,
+  Github,
+  linkedIn, 
+  twitter,
 };

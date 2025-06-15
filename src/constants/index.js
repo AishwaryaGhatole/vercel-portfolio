@@ -23,8 +23,29 @@ import {
   amazonBestSeller, 
   keepNote, 
   passwordGenerator,
+  Github,
+  linkedIn, 
+  twitter,
 } from "../assets";
 
+
+export const myLinks = [
+  {
+    name:"GitHub",
+    logo:Github,
+    link:"https://github.com/AishwaryaGhatole"
+  },
+  {
+    name:"LinkedIn",
+    logo:linkedIn,
+    link:"https://www.linkedin.com/in/aishwarya-ghatole-303295246/"
+  },
+  {
+    name:"Twitter",
+    logo:twitter,
+    link:"https://x.com/Phoenix_AI___01?t=_pHHghAxUvAW-bnSr2cXpw&s=03"
+  },
+]
 
 export const navLinks = [
   {
