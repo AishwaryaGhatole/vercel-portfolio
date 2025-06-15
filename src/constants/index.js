@@ -101,7 +101,7 @@ export const projects = [
   {
     name: "Chef Phoenix",
     description:
-      "Chef Phoenix is a smart recipe suggestion engine built with React and Vite, utilizing large language models via Hugging Face for intelligent, context-aware culinary recommendations. Users input available ingredients, and the app suggests recipes accordingly.",
+      "Chef Phoenix is an intelligent recipe suggestion app built with React and Vite. It uses Hugging Face language models to provide smart, context-aware culinary recommendations based on the ingredients users input.",
     tags: [
       { name: "reactJS", color: "blue-text-gradient" },
       { name: "Vite", color: "green-text-gradient" },
