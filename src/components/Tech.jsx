@@ -6,6 +6,9 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 
+const isMobile = window.innerWidth < 768;
+const MotionWrapper = isMobile ? React.Fragment : motion.div
+
 const TechnologyCard = ({ index, name, icon, link }) => (
   <div className="w-full sm:w-[45%] md:w-[30%] lg:w-[22%] xl:w-[18%] pb-10">
     <Tilt

@@ -4,12 +4,10 @@ import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import "../../index.css";
 
-const NUM_STARS = 1500; // Adjust the number of stars as needed
+const NUM_STARS = 1000; 
 
 const Stars = () => {
-  const ref = useRef({
-    rotation: { x: 0, y: 0, z: Math.PI / 4 },
-  });
+  const ref = useRef(null);
 
   const sphere = random.inSphere(new Float32Array(NUM_STARS * 3), { radius: 1.2 });
 
@@ -25,7 +23,7 @@ const Stars = () => {
           transparent
           color="#f272c8"
           size={0.002}
-          sizeAttenuation={true}
+          sizeAttenuation
           depthWrite={false}
         />
       </Points>
@@ -35,8 +33,8 @@ const Stars = () => {
 
 const StarsCanvas = () => (
   <div className="stars-canvas-container">
-    <Canvas camera={{ position: [0, 0, 1] }}>
-      <Suspense fallback={null}>
+    <Canvas dpr={[1, 1.5]} gl={{ powerPreference: "high-performance" }} camera={{ position: [0, 0, 1] }}>
+      <Suspense fallback={<div className="stars-loader" />}>
         <Stars />
       </Suspense>
 

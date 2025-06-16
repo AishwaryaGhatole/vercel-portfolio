@@ -102,14 +102,15 @@
   z-index: -1;
 }
 
-.triangle-canvas-container{
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.stars-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f272c8;
+  font-size: 1rem;
 }
+
 /* global.css */
 .input-field {
   display: flex;

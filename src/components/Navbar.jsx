@@ -9,6 +9,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
+
   const toggleResume = () => {
     const resumeUrl = "/aishwarya-portfolio/resume.pdf";
     window.open(resumeUrl, "_blank");
@@ -41,18 +42,21 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-6 items-center">
-            {navLinks.map((link, index) => (
-              <motion.li
-                key={link.id}
-                initial={{ opacity: 0, y: -10 }}
+          <motion.ul 
+          initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ staggerChildren: 0.07 }} 
+                className="hidden md:flex space-x-6 items-center">
+            {navLinks.map((link, index) => (
+              <li
+                key={link.id}
+                
                 className={`${
                   active === link.title ? "text-white" : "text-gray-300"
                 } hover:text-white text-lg font-medium cursor-pointer`}
                 onClick={()=>{
                   const sound = new Audio(`${link.sound}`)
+                  sound.volume = 0.5;
                   sound.play()
                 }}
               >
@@ -63,9 +67,9 @@ const Navbar = () => {
                 >
                   {link.title}
                 </a>
-              </motion.li>
+              </li>
             ))}
-            <motion.li
+            <li
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: navLinks.length * 0.1 }}
@@ -76,8 +80,8 @@ const Navbar = () => {
               >
                 Resume
               </button>
-            </motion.li>
-          </ul>
+            </li>
+          </motion.ul>
 
           {/* Mobile Toggle Button */}
           <div className="md:hidden">
@@ -95,11 +99,7 @@ const Navbar = () => {
       {/* Mobile Menu with Animation */}
       <AnimatePresence>
         {toggle && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
+          <div
             className="md:hidden bg-black text-white px-6 py-4 space-y-4"
           >
             {navLinks.map((link, index) => (
@@ -136,7 +136,7 @@ const Navbar = () => {
                 Resume
               </button>
             </motion.div>
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </nav>

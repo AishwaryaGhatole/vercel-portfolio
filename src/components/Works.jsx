@@ -7,6 +7,8 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+const isMobile = window.innerWidth < 768;
+
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
     <motion.div
