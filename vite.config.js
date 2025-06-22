@@ -16,4 +16,5 @@ export default defineConfig({
       process.env.VITE_EMAILJS_PUBLIC_KEY
     ),
   },
+  base: "/",
 });
