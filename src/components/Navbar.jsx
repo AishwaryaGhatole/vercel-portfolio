@@ -11,7 +11,7 @@ const Navbar = () => {
 
 
   const toggleResume = () => {
-    const resumeUrl = "/resume3.pdf";
+    const resumeUrl = "/resume4.pdf";
     window.open(resumeUrl, "_blank");
   };
 
