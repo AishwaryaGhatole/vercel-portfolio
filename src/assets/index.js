@@ -3,6 +3,8 @@ import sgbauLogo from "./education/sgbau_logo.png";
 import shivajiCollegeLogo from "./education/shri-shivaji-shikshan-sanstha-logo.jpg";
 import holyCrossLogo from "./education/holy-cross-logo.png";
 
+import linkIcon from "./link-icon.svg";
+
 // Import project images
 import solarSystem from "./projects/solar-system-project.png";
 import chefPhoenix from "./projects/chef-phoenix.png";
@@ -47,6 +49,7 @@ import linkedIn from "./mylinks/linkedin.svg";
 import twitter from "./mylinks/twitter.svg";
 
 export {
+  linkIcon,
   sound1,
   sound2,
   sound3,
