@@ -56,8 +56,8 @@ export const navLinks = [
     sound: sound1,
   },
   {
-    id: "education",
-    title: "education",
+    id: "project",
+    title: "Projects ",
     sound: sound2,
   },
   {
@@ -66,8 +66,8 @@ export const navLinks = [
     sound: sound3,
   },
   {
-    id: "project",
-    title: "Projects ",
+    id: "education",
+    title: "education",
     sound: sound4,
   },
   {
