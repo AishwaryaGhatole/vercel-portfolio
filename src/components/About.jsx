@@ -17,8 +17,8 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         id='about'
       >
-        I'm an Engineering student at SGBAU, Maharashtra, with a strong drive for full-stack development 
-        and solving real-world problems through tech. I'm a multilingual communicator who blends analytical
+        I'm an Engineering student at SGBAU, Maharashtra, with a strong drive for fullstack development 
+        and solving real world problems through tech. I'm a multilingual communicator who blends analytical
         thinking with creativity whether I’m writing code or collaborating across teams. With a deep curiosity 
         for how things work and how they can work better, I’m passionate about building scalable, intuitive web 
         solutions that make an impact. I'm always eager to learn, iterate, and grow both as a developer and 

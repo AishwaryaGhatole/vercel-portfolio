@@ -155,7 +155,7 @@ export const projects = [
   {
     name: "3D Solar System",
     description:
-      "An immersive 3D Solar System experience built with Three.js. Explore realistic planets, control their orbital speeds, pause or resume rotations, and view planet names on hover. Perfect for space enthusiasts to visually understand planetary motion in an interactive environment.",
+      "An interactive 3D Solar System built with Three.js, featuring realistic planets, controllable orbits, and hover-based planet labels to visualize planetary motion.",
     tags: [
       { name: "ThreeJS", color: "pink-text-gradient" },
       { name: "WebGL", color: "pink-text-gradient" },
