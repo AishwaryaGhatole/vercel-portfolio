@@ -14,38 +14,40 @@ import {
   git,
   bootstrap,
   vite,
+  sass,
   sgbauLogo,
   shivajiCollegeLogo,
   holyCrossLogo,
-  chefPhoenix, 
-  teenDog, 
-  travelJournal, 
-  amazonBestSeller, 
-  keepNote, 
+  solarSystem,
+  libraryManagement,
+  chefPhoenix,
+  teenDog,
+  travelJournal,
+  amazonBestSeller,
+  keepNote,
   passwordGenerator,
   Github,
-  linkedIn, 
+  linkedIn,
   twitter,
 } from "../assets";
 
-
 export const myLinks = [
   {
-    name:"GitHub",
-    logo:Github,
-    link:"https://github.com/AishwaryaGhatole"
+    name: "GitHub",
+    logo: Github,
+    link: "https://github.com/AishwaryaGhatole",
   },
   {
-    name:"LinkedIn",
-    logo:linkedIn,
-    link:"https://www.linkedin.com/in/aishwarya-ghatole-303295246/"
+    name: "LinkedIn",
+    logo: linkedIn,
+    link: "https://www.linkedin.com/in/aishwarya-ghatole-303295246/",
   },
   {
-    name:"Twitter",
-    logo:twitter,
-    link:"https://x.com/Phoenix_AI___01?t=_pHHghAxUvAW-bnSr2cXpw&s=03"
+    name: "Twitter",
+    logo: twitter,
+    link: "https://x.com/Phoenix_AI___01?t=_pHHghAxUvAW-bnSr2cXpw&s=03",
   },
-]
+];
 
 export const navLinks = [
   {
@@ -71,21 +73,52 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
-    sound:sound5,
+    sound: sound5,
   },
 ];
 
 export const technologies = [
-  {id:1 , name: "HTML 5",       icon: html,         link:"https://developer.mozilla.org/en-US/docs/Web/HTML" },
-  {id:2 , name: "CSS 3",        icon: css,          link:"https://developer.mozilla.org/en-US/docs/Web/CSS" },
-  {id:3 , name: "JavaScript",   icon: javascript,   link:"https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-  {id:4 , name: "React JS",     icon: reactjs,      link:"https://react.dev/" },
-  {id:5 , name: "Vite",         icon: vite,         link:"https://vite.dev/" },
-  {id:6 , name: "Tailwind CSS", icon: tailwind,     link:"https://tailwindcss.com/" },
-  {id:7 , name: "Bootstrap",    icon: bootstrap,    link:"https://getbootstrap.com/"},
-  {id:8 , name: "Node JS",      icon: nodejs,       link:"https://nodejs.org/en" },
-  {id:9 , name: "Git",          icon: git,          link:"https://git-scm.com/" },
-  {id:10 , name: "C",           icon: c,            link:"https://www.geeksforgeeks.org/c-language-introduction/" },
+  {
+    id: 1,
+    name: "HTML 5",
+    icon: html,
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    id: 2,
+    name: "CSS 3",
+    icon: css,
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    id: 3,
+    name: "JavaScript",
+    icon: javascript,
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  { id: 4, name: "React JS", icon: reactjs, link: "https://react.dev/" },
+  { id: 5, name: "Vite", icon: vite, link: "https://vite.dev/" },
+  {
+    id: 6,
+    name: "Tailwind CSS",
+    icon: tailwind,
+    link: "https://tailwindcss.com/",
+  },
+  { id: 7, name: "Sass", icon: sass, link: "https://sass-lang.com/" },
+  {
+    id: 8,
+    name: "Bootstrap",
+    icon: bootstrap,
+    link: "https://getbootstrap.com/",
+  },
+  { id: 9, name: "Node JS", icon: nodejs, link: "https://nodejs.org/en" },
+  { id: 10, name: "Git", icon: git, link: "https://git-scm.com/" },
+  {
+    id: 11,
+    name: "C",
+    icon: c,
+    link: "https://www.geeksforgeeks.org/c-language-introduction/",
+  },
 ];
 
 export const qualifications = [
@@ -120,6 +153,20 @@ export const qualifications = [
 
 export const projects = [
   {
+    name: "3D Solar System",
+    description:
+      "An immersive 3D Solar System experience built with Three.js. Explore realistic planets, control their orbital speeds, pause or resume rotations, and view planet names on hover. Perfect for space enthusiasts to visually understand planetary motion in an interactive environment.",
+    tags: [
+      { name: "ThreeJS", color: "pink-text-gradient" },
+      { name: "WebGL", color: "pink-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "NodeJS", color: "blue-text-gradient" },
+      { name: "Vercel", color: "green-text-gradient" },
+    ],
+    image: solarSystem,
+    source_code_link: "https://solar-system-ecru-xi.vercel.app/",
+  },
+  {
     name: "Chef Phoenix",
     description:
       "Chef Phoenix is an intelligent recipe suggestion app built with React and Vite. It uses Hugging Face language models to provide smart, context-aware culinary recommendations based on the ingredients users input.",
@@ -132,6 +179,19 @@ export const projects = [
     ],
     image: chefPhoenix,
     source_code_link: "https://github.com/AishwaryaGhatole/chef-app",
+  },
+  {
+    name: "Library Management",
+    description:
+      "Built a dashboard-based Library Management System using Next.js and Sass, with reusable components, a data-driven UI, and modular SCSS styling, gaining hands-on experience with the Next.js App Router and scalable frontend architecture.",
+    tags: [
+      { name: "NextJS", color: "blue-text-gradient" },
+      { name: "Sass", color: "green-text-gradient" },
+      { name: "Vercel", color: "pink-text-gradient" },
+      { name: "git", color: "green-text-gradient" },
+    ],
+    image: libraryManagement,
+    source_code_link: "https://library-management-system-ebon-two.vercel.app/",
   },
   {
     name: "TeenDog",
